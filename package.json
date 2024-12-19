@@ -1,0 +1,53 @@
+{
+  "name": "image",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://MKamerkilic4496.github.io/react-apıapp/",
+  "dependencies": {
+    "@react-native-community/cli": "^15.1.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts --openssl-legacy-provider test",
+    "eject": "react-scripts --openssl-legacy-provider eject",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build --repo https://github.com/MKamerkilic4496/react-apiapp.git"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-methods": "^7.25.9",
+    "gh-pages": "^6.2.0",
+    "npm-force-resolutions": "^0.0.10",
+    "postcss": "^8.4.49",
+    "resolve-url-loader": "^5.0.0",
+    "webpack-dev-middleware": "^7.4.2",
+    "yargs-parser": "^21.1.1"
+  }
+}
